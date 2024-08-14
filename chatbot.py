@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Replace with your actual Hugging Face token
-hf_token = os.getenv('api')
+hf_token = st.text_input("Enter your HuggingFace Token:") #os.getenv('api')
 
 # Initialize the HuggingFace model
 repo_id = "gpt2"  # Make sure this is the correct repository ID
