@@ -2,3 +2,4 @@ streamlit
 langchain
 huggingface_hub
 langchain_community
+python-dotenv==1.0.0

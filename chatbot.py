@@ -2,13 +2,13 @@ import streamlit as st
 from langchain.llms import HuggingFaceHub
 import os
 from dotenv import load_dotenv
+
 # Load secret .env file
-import configure
 
 load_dotenv()
 
 # Replace with your actual Hugging Face token
-hf_token = configure.api #os.getenv('api')
+hf_token = os.getenv('api')
 
 # Initialize the HuggingFace model
 repo_id = "gpt2"  # Make sure this is the correct repository ID
